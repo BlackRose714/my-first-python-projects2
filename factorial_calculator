@@ -1,0 +1,16 @@
+while True:
+    faktoriyel = 1
+    sayi = int(input("Please enter a non-negative number:"))
+    # Lütfen negatif olmayan bir sayı giriniz:
+
+    if sayi < 0:
+        print("Please enter a non-negative number.")
+        # Lütfen negatif olmayan bir sayı giriniz.
+    else:
+        for i in range(1, sayi + 1):
+            faktoriyel *= i
+        if sayi == 0:
+            faktoriyel = 1
+        print("Factorial:", faktoriyel)
+        # Faktöriyel: 
+        break
