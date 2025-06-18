@@ -66,4 +66,41 @@ input()	Takes input from the user.
 int()	Converts the input into an integer.
 if / else	Handles error checking for negative values.
 for i in range(1, sayi+1):	Multiplies numbers from 1 to the input number.
+
+
+
+User Login and Password Update System
+
+💻 Project Description
+
+This is a simple Python project that simulates a basic login system using a username and password. If the user provides correct credentials, access is granted. If the password is incorrect, the user is offered the option to update it.
+
+🔍 Features and Structures Used
+
+Variable Declaration: gamer_name, gamer_password
+
+User Input: input()
+
+Conditional Logic: if, elif, else
+
+Loop: while True
+
+String Comparison
+
+String Method: lower()
+
+
+🧠 Key Learnings
+
+Taking and handling user input
+
+Making decisions using conditions
+
+Controlling user attempts with an infinite loop
+
+Using if-elif-else logic
+
+String comparisons
+
+Making input case-insensitive with lower() method
 break	Exits the loop once a valid result is printed.
