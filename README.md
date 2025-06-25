@@ -22,6 +22,93 @@ Writing clean and structured code
 
 ✨ Ongoing Progress
 
+
+🧠 Geometric Shape Identifier
+
+A basic Python program to classify triangles and quadrilaterals based on user input.
+
+
+---
+
+💡 What This Project Covers
+
+Receiving user input
+
+Using try-except blocks for error handling
+
+Working with lists
+
+Using if, elif, else conditional statements
+
+Using functions
+
+Validating data length and shape rules
+
+
+
+---
+
+📌 How It Works
+
+1. The program asks the user how many sides the shape has (3 or 4).
+
+
+2. It collects the required side lengths.
+
+
+3. If the user enters a valid number of values, the program classifies the shape:
+
+Triangles (3 sides):
+
+Equilateral
+
+Isosceles
+
+Scalene
+
+Or it’s not a valid triangle if the sum rule fails.
+
+
+Quadrilaterals (4 sides):
+
+Square
+
+Rectangle
+
+General quadrilateral
+
+
+
+
+4. If invalid input is entered (like letters or missing sides), it shows appropriate warnings and restarts.
+
+
+
+
+---
+
+🔧 Functions Used
+
+Function/Structure	Purpose
+
+input()	Takes user input
+int()	Converts input to integer
+try/except	Catches non-integer input
+len()	Checks the number of elements
+print()	Displays results
+list.append()	Adds values to a list
+
+
+
+---
+
+✅ Example Run
+
+Enter the number of sides (3 / 4): 3
+Enter side 1: 4
+Enter side 2: 4
+Enter side 3: 4
+Equilateral triangle
 From now on, I’ll be writing and uploading my code in English on GitHub. This will help me improve both my programming and my technical English skills.
 This week, I’m planning to create small projects to reinforce my understanding of loops, conditionals, and strings.
 
