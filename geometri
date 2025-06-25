@@ -1,0 +1,41 @@
+def geometri(shape):
+    if len(shape) == 3:
+        a = shape[0]
+        b = shape[1]
+        c = shape[2]
+        if a + b > c and a + c > b and b + c > a:
+            if a == b == c:
+                print("Equilateral triangle")  # Eşkenar üçgen
+            elif a == b or a == c or b == c:
+                print("Isosceles triangle")  # İkizkenar üçgen
+            else:
+                print("Scalene triangle")  # Çeşitkenar üçgen
+        else:
+            print("Not a triangle")  # Üçgen belirtmiyor
+    elif len(shape) == 4:
+        a = shape[0]
+        b = shape[1]
+        c = shape[2]
+        d = shape[3]
+        if a == b == c == d:
+            print("Square")  # Kare
+        elif a == c and b == d:
+            print("Rectangle")  # Dikdörtgen
+        else:
+            print("Regular quadrilateral")  # Normal dörtgen
+    else:
+        print("Not a valid shape")  # Herhangi bir şekil değil
+
+while True:
+    try:
+        element_count = int(input("Enter the number of sides (3 / 4): "))  # Eleman sayısını giriniz (3 / 4):
+        shape = []
+        for i in range(element_count):
+            side = int(input(f"Enter side {i + 1}: "))  # x. kenarı giriniz:
+            shape.append(side)
+        if len(shape) == element_count:
+            geometri(shape)
+        else:
+            print("Incomplete input, please try again.")  # Eksik giriş yaptınız, tekrar deneyin.
+    except ValueError:
+        print("Please enter numbers only.")  # Lütfen sadece sayı giriniz.
